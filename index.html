@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/assets/favicons/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicons/favicon.svg" />
+    <link rel="shortcut icon" href="/assets/favicons/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/favicons/apple-touch-icon.png"
+    />
+    <link rel="manifest" href="/assets/favicons/site.webmanifest" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta name="apple-mobile-web-app-title" content="Branch Hopper" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <link rel="stylesheet" href="/style.css" />
+    <title>Branch Hopper - A TREEINCAT Game</title>
+
+    <!-- Meta Tags for SEO -->
+    <meta
+      name="description"
+      content="Jump your way to the top in Branch Hopper, an exciting HTML5 game by $TREEINCAT. Dodge enemies, climb branches, and compete for the highest score!"
+    />
+    <meta
+      name="keywords"
+      content="Branch Hopper, $TREEINCAT, HTML5 Game, arcade game, jumping game, browser game, fun game"
+    />
+    <meta name="author" content="$TREEINCAT" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Branch Hopper - A $TREEINCAT Game" />
+    <meta
+      property="og:description"
+      content="Jump your way to the top in Branch Hopper! Compete with friends and show off your high score."
+    />
+    <meta
+      property="og:image"
+      content="https://branchhopper.treeincat.com/assets/game-tg-banner.jpg"
+    />
+    <meta property="og:image:width" content="640" />
+    <meta property="og:image:height" content="360" />
+    <meta property="og:url" content="https://branchhopper.treeincat.com" />
+    <meta property="og:site_name" content="Branch Hopper" />
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Branch Hopper - A $TREEINCAT Game" />
+    <meta
+      name="twitter:description"
+      content="Can you reach the top? Play Branch Hopper and show off your skills!"
+    />
+    <meta
+      name="twitter:image"
+      content="https://branchhopper.treeincat.com/assets/game-tg-banner.jpg"
+    />
+    <meta name="twitter:site" content="@TreeStuckInCat" />
+    <meta name="twitter:creator" content="@TreeStuckInCat" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://branchhopper.treeincat.com" />
+  </head>
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-PBC7GKVNSS"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-PBC7GKVNSS");
+  </script>
+  <body>
+    <div id="app">
+      <div id="game-container"></div>
+    </div>
+    <div
+      style="
+        font-family: PS2P;
+        position: absolute;
+        left: -1000px;
+        visibility: hidden;
+      "
+    >
+      .
+    </div>
+    <!-- Hidden <a> tag for Safari workaround -->
+    <a
+      id="website-link"
+      href="https://treeincat.com"
+      target="_blank"
+      style="display: none"
+    ></a>
+
+    <script type="module" src="./bundle.min.js"></script>
+  </body>
+</html>
